@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sale Items</title>
+<link type="text/css" href="css/Styles.css" rel="stylesheet"></link>
+<script type="text/javascript">
+	
+var items=[
+           {"iname":"Chocolate Brownie",
+        	 "price":"Rs. 160"},
+           {"iname":"Black Forest",
+	        "price":"Rs. 260"},
+           {"iname":"White Forest",
+	        "price":"Rs. 360"},
+           {"iname":"Butter Scotch",
+	        "price":"Rs. 160"}
+           
+           ];
+	</script>
+</head>
+<body>
+
+<h1>Sale Items</h1>
+<form >
+	<table>
+		<tr>
+			<td>
+				<input type="checkbox" value="160" id="chk11"/>
+			</td>
+			<td id="i1"></td>
+			<td id="p1"></td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="checkbox" value="260" id="chk12">
+			</td>
+			<td id="i2"></td>
+			<td id="p2"></td>
+		
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" value="360" id="chk13">
+			</td>
+			<td id="i3"></td>
+			<td id="p3"></td>
+		
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" value="160" id="chk14">
+			</td>
+			<td id="i4"></td>
+			<td id="p4"></td>
+		
+		</tr>
+		<tr>
+			<td colspan="3">Total: <input type="text" id="totalamt" value="0">
+			</td>
+			
+		
+		</tr>
+	</table>
+</form>
+
+<script type="text/javascript">
+
+	for(i=0;i<items.length;i++){
+		
+		document.getElementById("i"+ (i+1)).innerHTML = items[i].iname;
+		document.getElementById("p"+ (i+1)).innerHTML= items[i].price;
+		
+	}
+
+</script>
+<script type="text/javascript" src="Scripts/Details.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Place Order</title>
+<link type="text/css" href="css/Styles.css" rel="stylesheet"></link>
+
+</head>
+<body>
+
+	<h1>Place Order</h1>
+	<form>
+	<table>
+		<tr>
+			<td>Customer Name</td>
+			<td>
+				<input type="text" id="uname" required="required" placeholder="Enter Customer Name">
+			</td>
+		</tr>
+		<tr>
+			<td>Location</td>
+			<td>
+				<select id="location">
+					<option value="Delhi" selected="selected">Delhi</option>
+					<option value="Gurgaon">Gurgaon</option>
+					<option value="Noida">Noida</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Bangalore">Bangalore</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Payment Mode</td>
+			<td>
+				<input type ="radio" name="payment" value="NetBanking">Net Banking
+				<input type ="radio" name="payment" value="Credit/DebitCard">Credit/Debit Card
+				<input type ="radio" name="payment" value="Wallet">Wallet
+			</td>
+		</tr>
+		<tr>
+			<td>Offers</td>
+			<td>
+				<input type="checkbox" value="Reward Points" name="checkbox1" id="chk1">Reward Points
+				<input type="checkbox" value="Coupon" name="checkbox1" id="chk2">Coupon
+				<input type="checkbox" value="Voucher" name="checkbox" id="chk3">Voucher
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" name="Reset" value="Reset">
+				<input type="submit" name="Submit" value="Submit" id="submit">
+			</td>
+		</tr>
+			
+	
+	</table>
+	</form>
+</body>
+<script type="text/javascript" src="Scripts/PlaceOrder.js"></script>
+
+</html>
