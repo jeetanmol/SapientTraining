@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Execution order</title>
+<script type="text/javascript" src="jslibs/jquery-1.12.1.js"></script>
+<script type="text/javascript">
+
+	window.onload=function(){
+		alert("On Load Called");
+	}
+	//jQuery global function
+	window.onload=function(){
+		alert("On Load2 Called");
+	}
+	//jQuery global function
+	$(function(){
+		
+		alert("Ready called");
+		
+		
+	});
+	$(function(){
+		
+		alert("Ready2 called");
+		
+		
+	});
+	
+	
+</script>
+</head>
+<body>
+
+
+<h1>jQuery Examples</h1>
+<h3 id="details">Ajax Calls</h3>
+
+<ul>
+
+	<li>UML</li>
+	<li>COAD</li>
+	<li>RDBMS</li>
+	<li>ANT &amp; Log4j </li>
+	<li>Design Patterns</li>
+
+
+</ul>
+</body>
+</html>

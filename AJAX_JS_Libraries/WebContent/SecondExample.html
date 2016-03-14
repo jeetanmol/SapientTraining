@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Execution order</title>
+<script type="text/javascript" src="jslibs/jquery-1.12.1.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		
+		$("h1").css("color","blue");
+		$("#details").css("font-size","1.3em");
+		$("ul>li").css("color","red");
+		//on is used ot add event
+		$("img").on('click',function(){
+			
+			alert("Vuhoooo");
+		});
+	});
+
+</script>
+</head>
+<body>
+
+
+<h1>jQuery Examples</h1>
+<h3 id="details">Ajax Calls</h3>
+
+<ul>
+
+	<li>UML</li>
+	<li>COAD</li>
+	<li>RDBMS</li>
+	<li>ANT &amp; Log4j </li>
+	<li>Design Patterns</li>
+
+
+</ul>
+
+<img alt="TV" src="images/tv.jpg">
+</body>
+</html>
