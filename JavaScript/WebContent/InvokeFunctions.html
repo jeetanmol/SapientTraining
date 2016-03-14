@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Understanding Java Script Functions</h1>
+
+<input type="button" value="Function1" id="btn1">
+<input type="button" value="Function2" id="btn2">
+<input type="button" value="Function3" id="btn3">
+<input type="button" value="Function4" id="btn4">
+<input type="button" value="Function5" id="btn5">
+
+<script type="text/javascript" src="Scripts/JavaScriptFunctions.js" ></script>
+<script>
+	var b1= document.getElementById("btn1");
+	var b2= document.getElementById("btn2");
+	var b3= document.getElementById("btn3");
+	var b4= document.getElementById("btn4");
+	var b5= document.getElementById("btn5");
+	
+	b1.addEventListener('click', function(){
+		normalFunction();
+	});
+
+	
+	b2.addEventListener('click', function(){
+		withArgFunction("Anmol");
+	});
+	
+	b3.addEventListener('click', function(){
+		
+		var ret = returnFunction("Anmol");
+		alert(ret);
+	});
+	
+	b4.addEventListener('click', function(){
+		takeFunctionAsArg(function(){
+			return "Anmol";
+		});
+
+		});
+		
+	
+	b5.addEventListener('click', function(){
+		var funcList = returningFunctions();
+		funcList.addClass();
+		funcList.removeClass();
+	});
+</script>
+</body>
+</html>

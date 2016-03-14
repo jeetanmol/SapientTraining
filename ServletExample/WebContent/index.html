@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>My First Example</title>
+<link href="css/styles.css" type="text/css" rel="stylesheet"> 
+<script type="text/javascript">
+
+	
+	
+</script>
+</head>
+
+<body>
+<header>
+	<div id="hdLeft">
+	<img alt="Logo" src="images/download.jpg" >
+	</div>
+	<div id="hdRight">
+	<h1>Grapes Restaurant</h1>
+	</div>
+
+</header>
+
+<nav >
+	<ul>
+	<li><a href = "Home.html">Home</a></li>
+	<li><a href = "Book.html">Book</a></li>
+	<li><a href = "Order.html">Order</a></li>
+	<li><a href = "Review.html">Review</a></li>
+	<li><a href = "Contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+<section>
+
+	<form method="get" action="greet">
+	<table>
+		<tr>
+			<td><label>UserName</label></td>
+			<td><input type="text" name="username" required="required" placeholder="Enter username" id="username" ></td>
+		</tr>
+		<tr>
+		<td><label>Password</label></td>
+		<td><input type="password" name="password" id="password"><span id="msg"></span></td>
+		</tr>
+		<tr>
+		<td><label>Role</label></td>
+		<td>
+			<select name="role">
+			<option value="ADM">Administrator</option>
+			<option value="CHK">Chef</option>
+			<option value="MAN">Manager</option>
+			<option value="WAI">Waiter</option>
+			</select></td>
+		</tr>
+		<tr>
+		<td><label>Email</label></td>
+		<td><input type="email" name="email" required="required" multiple="multiple"></td>
+		</tr>
+		
+		<tr>
+		<td><label>Telephone</label></td>
+		<td><input type="tel" name="telephone" pattern="\d{3}-\d{4}-\d{3}" placeholder="999-9999-999"></td>
+		</tr>
+		
+		<tr>
+		<td colspan="2"><input type="submit" value="Login" ></td>
+		</tr>
+</table>
+</form>
+
+<script type="text/javascript">
+	var username = document.getElementById("username");
+
+	username.addEventListener('copy', function(event){
+	
+	event.preventDefault();
+	alert("Copy not allowed");
+	});
+
+	username.addEventListener('paste', function(event){
+	
+	event.preventDefault();
+	
+	});
+	
+	username.addEventListener('contextmenu', function(event){
+		
+		event.preventDefault();
+		alert("Right Click not allowed");
+		
+	});
+
+
+	var password = document.getElementById("password");
+	var msg = document.getElementById("msg");
+	
+	password.addEventListener('input', function(event){
+		length = password.value.length;
+		
+		if(length <3){
+			msgText = "weak";
+			color="red";
+		}
+		else if( length<6){
+			msgText = "medium";
+			color = "darkorange";
+		}
+		else{
+			msgText = "strong";
+			color = "green";
+		}
+		msg.innerHTML =msgText;
+		msg.style.color = color;
+	});
+	
+	
+</script>
+</section>
+</body>
+</html>

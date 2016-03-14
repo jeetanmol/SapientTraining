@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="custBean1" class="com.training.domains.Customer" autowire="byName">
+	<property name="custId" value="102"></property>
+	<property name="customerName" value="Anmol"></property>
+	<property name="phoneNumber" value="9815613232"></property>
+</bean>
+
+<bean id="adr" class="com.training.domains.Address">
+	<constructor-arg name="houseNo" value="846"></constructor-arg>
+	<constructor-arg name="city" value="Gurgaon"></constructor-arg>
+	<constructor-arg name="state" value="Haryana"></constructor-arg>
+	<constructor-arg name="pincode" value="151502"></constructor-arg>
+</bean>
+
+<bean id="invBean" class="com.training.domains.Invoice" autowire="byType">
+	<property name="invoiceNo" value="201"></property>
+	<property name="billAmount" value="500.30"></property>
+</bean>
+</beans>

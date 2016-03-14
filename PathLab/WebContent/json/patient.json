@@ -1,0 +1,9 @@
+
+
+[
+	{"patientCode":"200", "patientName":"John", "age":"40", "handPhone":"9812345657", "email":"john@gmail.com","gender":"m"},
+	{"patientCode":"201", "patientName":"Ana", "age":"30", "handPhone":"9812345657", "email":"ana@gmail.com","gender":"f"},
+	{"patientCode":"202", "patientName":"Annie", "age":"22", "handPhone":"9812345657", "email":"annie@gmail.com","gender":"f"},
+	{"patientCode":"203", "patientName":"Harvey", "age":"40", "handPhone":"9812345657", "email":"harvey@gmail.com","gender":"m"},
+	{"patientCode":"204", "patientName":"Mike", "age":"32", "handPhone":"9812345657", "email":"mike@gmail.com","gender":"m"}
+]

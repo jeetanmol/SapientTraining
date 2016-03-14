@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+
+
+
+.title{
+	color: gray;
+	font-family:sans-serif;
+	background-color: pink;
+	text-align: center;
+	height: 70px;
+	margin-top: 10px;
+ 
+	
+}
+
+
+
+div ul>li{
+	display: inline-block;
+	
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.lang {
+	text-align: right;
+	color: black;
+
+}
+
+.footer{
+	padding: inherit;
+	
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+
+.main{
+	padding: 100px;
+	padding-bottom: 350px;
+}
