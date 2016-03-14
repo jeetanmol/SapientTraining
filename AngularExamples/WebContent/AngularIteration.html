@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Angular Iteration</title>
+<script type="text/javascript" src="Scripts/angular.js"></script>
+
+<script type="text/javascript">
+
+	var itemList= [
+			
+			{"itemName":'Television',
+			 "price":23000},
+			{"itemName":'Refrigerator',
+			 "price":20000},
+			{"itemName":'Air Conditioner',
+			  "price":30000},
+			 {"itemName":'Washing Machine',
+				"price":15000}
+			
+	];
+	
+	var app = angular.module("oneway",[]);
+	
+	app.controller('itemController',function($scope){
+		
+		$scope.product=itemList;
+		
+	});
+</script>
+</head>
+<body >
+
+<div data-ng-app="oneway" data-ng-controller="itemController">
+
+<label>Search</label>
+<input type="search" data-ng-model="criteria" name="criteria" >
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Price</th>
+	</tr>
+	<tr data-ng-repeat="x in product|orderBy:'price'|filter:criteria">
+		<td>{{x.itemName}}</td>
+		<td>{{x.price}}</td>
+	</tr>
+</table>
+
+	
+</div>
+</body>
+</html>
